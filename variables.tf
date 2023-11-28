@@ -94,10 +94,9 @@ variable "tfc_agent_single" {
   EOF
 }
 
-variable "tfc_agent_disable_update" {
-  type        = bool
-  default     = false
-  description = "Disable automatic core updates."
+variable "tfc_agent_auto_update" {
+  type        = string
+  default     = "minor"
 }
 
 variable "tfc_address" {
